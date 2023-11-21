@@ -1,7 +1,7 @@
 define("ace/theme/tomorrow_night", ["require", "exports", "module", "ace/lib/dom"], function(e, t, n) {
   t.isDark = !0;
   t.cssClass = "ace-tomorrow_night-theme";
-  t.cssText = 
+  t.cssText = `
     .ace-tomorrow_night-theme .ace_gutter {
       background: transparent;
       color: #c70f02;  
@@ -106,8 +106,8 @@ define("ace/theme/tomorrow_night", ["require", "exports", "module", "ace/lib/dom
         -0.8px 0.8px 0 #732921,
         0.8px 0.8px 0 #732921;
     }
-  ;
-
+  `;
+  
   var r = e("../lib/dom");
   r.importCssString(t.cssText, t.cssClass);
 });
